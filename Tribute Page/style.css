@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*
+https://www.karate-k.com/images/Azerbaidjan/Aghayev-Rotterdam2018B-075.jpg"
+https://rafaelaghayev.com/wp-content/uploads/2020/04/IMG-20200222-WA0074.jpg
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: lighter;
+}
+h1 {
+  font-size: 4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  height: 100vh;
+  color: white;
+  background: hsl(0, 0%, 2%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  background-size: cover;*/
+}
+
+.intro-description {
+  padding-left: 5rem;
+  flex-shrink: 1;
+  width: 50%;
+}
+
+.intro-description h1 {
+  font-size: 5rem;
+}
+
+.intro-description h2 {
+  font-size: 2rem;
+  color: #474747;
+}
+
+.header-img {
+  /*filter: grayscale(100%);*/
+  position: relative;
+}
+
+.header-img img {
+  filter: grayscale(100%);
+  height: 100%;
+  width: 100%;
+}
+.header-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, #151515, black);
+  opacity: 0.8;
+}
+
+#summary {
+  margin-top: 40px;
+  color: #474747;
+}
+
+#tribute-info {
+  width: 70%;
+  margin-top: 80px;
+}
+
+#career {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 20px;
+  color: #474747;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-paragraph {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.section-img {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border: white 10px solid;
+  box-shadow: 0 0 30px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.section-img:hover {
+  filter: grayscale(0);
+}
+
+footer {
+  color: #474747;
+  background-color: #151515;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: #474747;
+  font-weight: bold;
+  font-size: 1.06rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-description {
+    width: 95%;
+    text-align: center;
+    margin: 20px 0;
+    padding-left: 0;
+  }
+
+  #tribute-info {
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .section-img {
+    width: 100%;
+    aspect-ratio: auto;
+    border: none;
+    box-shadow: 0 0 10px;
+    border-radius: 0;
+  }
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+
+  padding: auto;
+}

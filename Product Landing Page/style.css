@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+nav li {
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  justify-content: space-around;
+  display: flex;
+}
+
+header img {
+  height: 100%;
+  width: 300px;
+}
+
+form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2,
+#email {
+  margin-bottom: 15px;
+}
+
+#submit {
+  margin-bottom: 50px;
+}
+
+form input {
+  width: 250px;
+  padding: 3px;
+}
+
+.submit {
+  background-color: #f1c40f;
+  color: black;
+  border: 0;
+  padding: 10px;
+}
+
+#submit {
+  font-weight: 900;
+  width: 200px;
+}
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+.icon img {
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card2 {
+  width: calc(100% / 3);
+  border: 1px solid #000;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.card-title h4 {
+  padding: 20px 40px;
+}
+
+.card-title {
+  text-align: center;
+  background-color: #ddd;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body h4 {
+  margin: 15px;
+}
+.card-body li {
+  display: block;
+  padding: 5px;
+}
+
+.select-btn {
+  margin: 30px;
+}
+@media only screen and (max-width: 700px) {
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  main {
+    margin-top: 30px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin-top: 228px;
+    text-align: center;
+  }
+
+  #prices {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card2 {
+    width: auto;
+  }
+}
+
+#prices {
+  display: flex;
+  width: 100%;
+}

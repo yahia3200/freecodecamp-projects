@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+  padding: 30px 60px;
+  margin-left: 280px;
+  background-color: #1a1a1a;
+}
+
+#main-doc section {
+  max-width: 850px;
+}
+
+nav header {
+  padding: 30px 30px;
+}
+
+header {
+  font-size: x-large;
+  font-weight: 700;
+  color: #42b883;
+}
+
+nav {
+  width: 280px;
+  height: 100%;
+  position: fixed;
+  background-color: #1a1a1a;
+  top: 0;
+  left: 0;
+  border-right: #42b883 solid 1px;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px 30px;
+  color: rgba(235, 235, 235, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav li:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+section li {
+  margin-left: 40px;
+}
+
+.content {
+  margin: 35px 0;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+code {
+  padding: 0px !important;
+  margin-bottom: -20px !important;
+  display: block;
+  font-family: "Source Code Pro", monospace;
+}
+nav ul {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 815px) {
+  nav {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+    height: 275px;
+    z-index: 1;
+    border-bottom: 2px solid #42b883;
+  }
+
+  nav header {
+    text-align: center;
+  }
+  nav ul {
+    height: 170px;
+  }
+
+  main {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 275px;
+  }
+}

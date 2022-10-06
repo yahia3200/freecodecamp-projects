@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.7rem;
+}
+
+nav {
+  background-color: #be3144;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.typewriter h3 {
+  font-weight: 300;
+  overflow: hidden;
+  border-right: 8px solid #be3144;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #be3144;
+  }
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li:hover {
+  background-color: #45567d;
+}
+
+nav a {
+  display: block;
+  color: white;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+}
+
+#welcome-section {
+  margin-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h3 {
+  font-weight: 400;
+  font-style: italic;
+  color: #be3144;
+}
+
+#projects {
+  text-align: center;
+  background-color: #45567d;
+  padding: 80px 30px;
+}
+
+#projects h2 {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 2px solid white;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #303841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: calc(100% - 1rem);
+  object-fit: cover;
+}
+
+.card h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303841;
+  padding: 50px 80px;
+  height: 90vh;
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact p {
+  font-weight: 200;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.links a:hover {
+  transform: translateY(8px);
+}
+
+.links a {
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.code {
+  color: #3a3d40;
+  transition: color 0.3s ease-out;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .code {
+  color: #ff7f50;
+}
+
+footer {
+  height: 10vh;
+  background-color: #3a3d40;
+  font-size: 1rem;
+  font-style: italic;
+  border-top: #be3144 5px solid;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+@media only screen and (max-width: 815px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects {
+    padding: 80px 20px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}

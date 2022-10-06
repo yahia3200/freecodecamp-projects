@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #4e35f1;
+}
+
+h1 {
+  color: #4e35f1;
+}
+
+.sec {
+  padding: 0.5rem 0;
+}
+
+#submit {
+  background: #4e35f1;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+#comments-label {
+  display: block;
+}
+input {
+  padding: 5px 5px;
+}
+.first-sec {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.labels label {
+  padding: 0.6rem 0;
+}
+
+.inputs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  margin: 0.3rem 0;
+}
+
+input {
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+textarea {
+  border-radius: 6px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .app {
+    margin: 1rem auto;
+    width: 90%;
+  }
+}

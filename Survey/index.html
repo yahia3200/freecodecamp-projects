@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
+      <form id="survey-form" action="">
+        <div class="first-sec">
+          <div class="labels">
+            <label for="name" id="name-label" class="block-label">Name</label>
+            <label for="email" id="email-label" class="block-label"
+              >Email</label
+            >
+            <label for="number" id="number-label" class="block-label"
+              >Age</label
+            >
+          </div>
+          <div class="inputs">
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Enter your name"
+              class="full-input"
+            />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+              class="full-input"
+            />
+            <input
+              type="number"
+              id="number"
+              required
+              min="18"
+              max="99"
+              placeholder="Enter your Age"
+              class="full-input"
+            />
+          </div>
+        </div>
+
+        <div class="sec">
+          <label for="dropdown" class="block-label"
+            >Which option best describes your current role?</label
+          >
+          <select name="job" id="dropdown" class="full-input">
+            <option value="Student">Student</option>
+            <option value="fullJob">Full Time Job</option>
+            <option value="partJob">Part Time Job</option>
+            <option value="other">Other</option>
+            <option value="none">Prefer Not To Say</option>
+          </select>
+        </div>
+
+        <div class="sec">
+          <label for="gender" class="block-label">Your gender</label>
+
+          <div class="block-lable">
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">Male</label>
+          </div>
+
+          <div class="block-label">
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+          </div>
+
+          <div class="block-label">
+            <input type="radio" name="gender" value="other" id="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <div class="sec">
+          <label for="improve" class="block-label"
+            >What would you like to see improved? (Check all that apply)</label
+          >
+
+          <div class="block-label">
+            <input type="checkbox" value="frontEnd" id="frontEnd" />
+            <label for="frontEnd">Front-end Projects</label>
+          </div>
+
+          <div class="block-lable">
+            <input type="checkbox" value="backEnd" id="backEnd" />
+            <label for="backEnd">Back-end Projects</label>
+          </div>
+
+          <div class="block-label">
+            <input type="checkbox" value="challenges" id="challenges" />
+            <label for="challenges">Challenges</label>
+          </div>
+        </div>
+
+        <div class="sec">
+          <label for="comments" class="block-label" id="comments-label"
+            >Any comments or suggestions?</label
+          >
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="sec">
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
